@@ -1,0 +1,14 @@
+<!-- prettier-ignore -->
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<h2>{{ username }}'s Collection:</h2>
+{% for cat in cats %}
+<a href="/cats/{{ cat.id }}">
+  <h3>{{ cat.name }}</h3>
+</a>
+{% endfor %}
+
+<!-- prettier-ignore -->
+{% endblock %}
