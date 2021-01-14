@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cats</title>
+  </head>
+  <body>
+    <h1>The Cat Collector's Cats</h1>
+    <hr />
+    {% for cat in cats %}
+    <p>Name: {{ cat.name }}</p>
+    {% if cat.age > 0 %}
+    <p>Age: {{ cat.age }}</p>
+    {% else %}
+    <p>Age: kitten</p>
+    {% endif %}
+    <hr />
+    {% endfor %}
+    <footer>Cat Collector 2021</footer>
+  </body>
+</html>
